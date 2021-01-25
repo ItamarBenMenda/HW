@@ -1,0 +1,270 @@
+/*===============================================================================
+        Default values for the project:
+
+        Font Family : Rubik
+        
+        Greenish Blue:      :#34c6d3       (buttons icons links &backgrounds)
+        Steel Grey:         :#41464b        (Headings)
+        Blue Bayoux:        :#64707b        (Paragraphs)
+        White:              :#fff           (Text with black backgrpunds)
+        Black:              :#000           
+        
+
+
+
+=================================================================================
+*/
+
+html,
+body {
+    direction: rtl;
+    height: 100%;
+}
+
+body {
+    font-family: "Rubik";
+}
+
+p{
+    color: #64707b;
+    font-size:16px;
+    font-weight:300;
+}
+
+h3 {
+    color:#41464b;
+    text-transform: uppercase;
+    
+}
+
+
+/*===============================================================================
+    HOME
+=================================================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/view2.jpg");
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h3 {
+    color: 000;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 20px 0 20px 0;
+}
+
+
+/*===============================================================================
+   Parralax (Generic)
+=================================================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/*===============================================================================
+    Buttons - generic
+=================================================================================*/
+
+.btn-general {
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover .btn-white:focus {
+    background-color: #fff;
+    color: #fff;
+}
+
+.btn-blue {
+    border-color: #34c6d3 ;
+    color: #34c6d3 ;
+}
+
+.btn-blue:hover .btn-blue:focus {
+    background-color: #34c6d3 ;
+    color: #fff;
+}
+
+
+
+/*===============================================================================
+   Animate
+=================================================================================*/
+
+#home-cover {
+    animation-delay: .1s;
+    animation-duration: .5s;
+}
+
+#home-heading {
+    animation-delay: .5s;
+    animation-duration: .5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+    animation-duration: .5s;
+}
+
+/*===============================================================================
+   Content - generic
+=================================================================================*/
+
+.content-box{
+    padding: 60px 0 60px 0;
+    
+}
+
+.content-title h3{
+    font-size:70px;
+    font-weight:700px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    
+}
+
+.content-title-underline{
+    width:30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin:0 auto 30px auto;
+}
+
+/*===============================================================================
+   Services - generic
+=================================================================================*/
+
+.service-item{
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.service-item-icon i{
+    color:#34c6d4;
+    float:right;
+    padding:15px;
+    margin-right:25px;
+    width:75px;
+    height:75px;
+    text-align: center;
+
+}
+
+.service-item:hover .service-item-icon i{
+    color:#fff;
+    background-color: #34c6d3;
+    
+}
+
+.service-item-title h3{
+    font-size:40px;
+    font-weight:400;
+    margin:0 0 10px 0;
+}
+.service-item-desc p{
+    
+    margin: 0;
+    padding:85px;
+    
+}
+
+/*===============================================================================
+   About
+=================================================================================*/
+#about-bg-diagonal{
+    width:60%;
+    height:700px;
+    float:right;
+    background-image:url(../img/yossi.jpg);
+    border-left:200px solid #fff;
+    border-top: 700px solid transparent;
+}
+#about-content-box{
+    float:left;
+    height:700px;
+}
+#about-content-box-outer{
+    width:100%;
+    height:100%;
+    display:table;
+}
+
+#about-content-box-inner{
+    display:table-cell;
+    vertical-align:middle;
+}
+#about .cntent-title h3 {
+    text-align:left;
+}
+
+#about .content-title-undeline{
+    margin: 0 0 30px 0;
+}
+
+#about-desc p{
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
