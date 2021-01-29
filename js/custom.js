@@ -25,32 +25,7 @@ $(function () {
 			
 	});
 	
-		$("#galgefen").magnificPopup({
-		delegate: "a",
-		type: "image",
-		gallery: {
-			enabled: true
-        }
-			
-	});
-	
-		$("#germany").magnificPopup({
-		delegate: "a",
-		type: "image",
-		gallery: {
-			enabled: true
-        }
-			
-	});
-	
-		$("#nessziona").magnificPopup({
-		delegate: "a",
-		type: "image",
-		gallery: {
-			enabled: true
-        }
-			
-	});
+		
 		
 });
 
@@ -205,21 +180,73 @@ $(function(){
 	SEND MAIL
 ===============================================================*/
  
-function validateForm()
-{
-    var status = $('div#form_status');
-    var form = $('form.contact-form');
+//function validateForm()
+//{
+//    var status = $('div#form_status');
+//    var form = $('form.contact-form');
+//    $.ajax({
+//        url: 'contact-form-process?'+form.serialize()
+//    }).done(function(data){
+//        status.html(data);
+//   });
+//}
+
+$("#idForm").submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = form.attr('action');
+    
     $.ajax({
-        url: 'contact-form-process?'+form.serialize()
-    }).done(function(data){
-        status.html(data);
-    });
-}
+           type: "POST",
+           url: 'contact-form-process.php',
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+			   console.log(data.trim());
+			   if(data.trim() === '1'){
+				//תקפיץ פה MODAL   
+				   $("#ConfirmModal").modal('show');
+				   console.log('IM HERE');
+			   }else{
+				   //ERROR
+			   }
+               //alert(data); // show response from the php script.
+			   $('#idForm').find('input, textarea, select').each(
+				   function(){
+				   $("#" + this.id).val('');
+					}
+				);
+           }
+         });
+
+    
+});
 
 /*===============================================================
 	Journal
 ===============================================================*/
- 
-``
+// Get the modal
+/*var modal = document.getElementById('galg');
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+*/
     

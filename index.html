@@ -6,8 +6,11 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
 
     <title>אומנות בבנייה</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
     <link href="img/eagle.ico" rel="icon" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=hebrew" rel="stylesheet">
@@ -22,6 +25,7 @@
 	
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 
 </head>
 
@@ -47,18 +51,12 @@
 					
 					</div>
 						<div class="collapse navbar-collapse" id="vesco-menu">
-							<ul style="dir:rtl;" class="nav navbar-nav" >
-								<li><a class="smooth scroll" href="#services">אפשרויות בחירה</a></li>
-								<li><a class="smooth scroll" href="#about">אודותיי</a></li>
-								<li><a class="smooth scroll" href="#work">גלריה</a></li>
-								<li><a class="smooth scroll" href="#contact">צור קשר</a></li>
-								<li><a class="smooth scroll" href="#home">ראש העמוד</a></li>
-								<!--li><a class="smooth scroll" href="#team">Team</a></li>
-								<li><a class="smooth scroll" href="#testimonials">Testimonials</a></li>
-								<li><a class="smooth scroll"href="#pricing">Pricing</a></li>
-								<li><a class="smooth scroll" href="#stats">Stats</a></li>
-								<li><a class="smooth scroll" href="#clients">Clients</a></li-->
-								
+							<ul style="dir:rtl;font-family: 'Suez One', serif;" class="nav navbar-nav" >
+							    <li><a class="smooth scroll" href="#contact" >צור קשר</a></li>
+								<li><a class="smooth scroll" href="#work" >גלריה</a></li>
+								<li><a class="smooth scroll" href="#about" >אודותיי</a></li>
+								<li><a class="smooth scroll" href="#services" >נכתב עליי</a></li>
+								<li><a class="smooth scroll" href="#home" >ראש העמוד</a></li>
 							</ul>
 							
 					
@@ -83,11 +81,14 @@
                 <div id="home-content-box-inner" class="text-center">
 
                     <div id="home-heading" class="animated zoomIn">
-                        <h3> האמנות שלי <br> מוגש לכם באהבה
+                        <h3 style="font-family: 'Suez One', serif;color:blue" >יוסי &emsp;בן מנדה  <br>
                         </h3>
+						
+						<h4 style="font-family: 'Suez One', serif;color:blue; font-size: 32px; margin-top: 80px; "> האמנות שלי מוגשת לכם באהבה</h4>
+						
                     </div>
                     <div id="home-btn" class="animated zoomIn">
-                        <a  class="btn btn-lg btn-general btn-white smooth scroll" href="#work" role="button" title="מוזמנים ישירות להנות מעבודתי">מוזמנים להנות מעבודתי</a>
+                        <a  class="btn btn-lg btn-general btn-white smooth scroll" style="font-family: 'Suez One', serif; font-size: 24px; color:darkblue;" href="#work" role="button" title="מוזמנים ישירות להנות מעבודתי">מוזמנים להנות מעבודתי</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@
     </section>
     <!-- Services -->
     <section id="services">
-        <div class="content-box">
+        <div class="content-box" style="background-color:aliceblue">
 
             <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
 
@@ -119,7 +120,7 @@
                                 </div>
                                 <div class="service-item-title">
 									
-									<h3>
+									<h3 style="font-family: 'Suez One', serif;">
 										<a href="#work">
 													גלריה
   										</a>
@@ -128,7 +129,7 @@
                                 </div>
                                 <div class="service-item-desc">
 									 <!--a href="#work" role="button" title="מוזמנים ישירות להנות מעבודתי">מוזמנים להנות מעבודתי</a-->
-                                    <p>
+                                    <p style="font-family: 'Suez One', serif;">
 										<a href="#work">
 													מוזמנים להתרשם מהעבודות
   										</a>
@@ -165,8 +166,8 @@
                                     <i class="fa fa-paint-brush fa-3x"></i>
                                 </div>
                                 <div class="service-item-title">
-                                   									<h3>
-										<a href="gallery.html" target="_blank">
+                                   									<h3 style="font-family: 'Suez One', serif;">
+										<a  data-target="#articlesModal" data-toggle="modal" data-target="#articlesModal">
 													מהעיתונות
   										</a>
 										</h3>
@@ -177,16 +178,15 @@
 											מוזמנים לקרוא
 									</button-->
 									<!--a data-toggle="modal" href="#exampleModal">Open Modal</a-->									
-												                                    <p>
-										<a  href="gallery.html" target="_blank">
-													אז כן, במהלך השנים היו קצת כתבות עליי
+			                          <p style="font-family: 'Suez One', serif;">
+										<a  data-target="#articlesModal" data-toggle="modal" data-target="#articlesModal">
+													מוזמנים להכנס למספר כתבות
   										</a>
 										</p>
-						
 									
-
-									
-                                    <!--p>אז כן, במהלך השנים היו קצת כתבות עליי</p-->
+										<!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#articlesModal">
+  									תהנו...
+									</button-->
                                 </div>
                             </div>
                         </div>
@@ -202,35 +202,33 @@
         </div>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" style="background-color:aliceblue">
 
         <!-- About right side with diagnosal BG parallax-->
-        <div id="about-bg-diagonal" class="bg-parallax"></div>
+        <div id="about-bg-diagonal" class="bg-parallax" style="background-color:aliceblue"></div>
 
         <!-- About left side with content-->
         <div class="container">
 
             <div class="row">
                 <div class="col-md-4">
-                    <div id="about-content-box">
+                    <div id="about-content-box" style="background-color:aliceblue">
                         <div id="about-content-box-outer">
 
                             <div id="about-content-box-inner">
 
                                 <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
 									
-                                    <h3>אודות האומן</h3>
+                                    <h3 style="font-family: 'Suez One', serif;">אודות האומן</h3>
                                     <div class="content-title-underline">
                                     </div>
                                     <div id="about-descwow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                        <p>מוזמנים לקרוא עליי בקצרה</p>
+                                        <p style="font-family: 'Suez One', serif;">מוזמנים לקרוא עליי בקצרה</p>
                                     </div>
 									
 									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   									תהנו...
-									</button>
-									
-									
+									</button>	
 									
                                     <!--div id="about-btn">
                                         <a class="btn btn-lg btn-general btn-blue smooth scroll" data-toggle="modal" data-target="#exampleModal" role="button"> תהנו</a>
@@ -248,9 +246,9 @@
     </section>
     <!-- Work -->
     <section id="work">
-                <div class="content-box">
+                <div class="content-box" style="background-color:aliceblue">
             <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                <h3>גלריית עבודות</h3>
+                <h3 style="font-family: 'Suez One', serif;">גלריית עבודות</h3>
                 <div class="content-title-underline">
                 </div>
              </div>             
@@ -285,7 +283,7 @@
                 </div>
             </div>          			
 			  <!--div class="col d-none d-lg-block align-self-center"-->
-					<div class=" itamar" style="visibility: collpase; height:0px;">
+					<div class=" itamar" style="visibility: hidden; height:0px;">
 
                                <div class="img-wrapper " >
                         <a href="img/BrooklynBridge.jpg" title="גשר ברוקלין">
@@ -293,7 +291,7 @@
 								   </a>								   								   
 								</div>	  		  					  
 					</div>			
-			<div class= "itamar" style="visibility: collapse; height:0px;">
+			<div class= "itamar" style="visibility: hidden; height:0px;">
 				<div class="img-wrapper">
 					<a href="img/Broshes.jpg" title="שדרת ברושים">
 					<img src=img/Broshes.jpg class="img-responsive" alt="Work">
@@ -309,8 +307,46 @@
 			</div>			
             </div>			           
         </div>												
-		</div>								    
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
     </section>
+	
+	<!--section>
+	
+									  <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption"><img src="img/Road.jpg" style="height:200px;weight:200px;margin-left: 100px;margin-right: 100px;height: 20vh;"></a>
+			   				  <a href="img/BrooklynBridge.jpg"  data-lightbox="image1235" data-title="My caption"><img src="img/BrooklynBridge.jpg" style="height:200px;weight:200px;margin-left: 100px;height: 20vh;"></a>
+						      <a href="img/Broshes.jpg"  data-lightbox="image1235" data-title="My caption"><img src="img/Broshes.jpg" style="height:200px;weight:200px;margin-left: 100px;height: 20vh;"></a>
+		 					  <a href="img/view1.jpg"  data-lightbox="image1235" data-title="My caption"><img src="img/view1.jpg" style="height:200px;weight:200px;height: 20vh;"></a>
+		 					  <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		 					  <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		 					  <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		 					  <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+						      <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		                      <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		                      <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		                      <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		                      <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+		                      <a href="img/Road.jpg"  data-lightbox="image1235" data-title="My caption">
+							  <script>	 
+    							 light.option({
+      							'resizeDuration': 200,
+      							'wrapAround': true
+    							})
+	
+	
+	</section-->
+	
     <!-- Team -->
     <!--section id="team" >
         <div class="content-box">
@@ -708,14 +744,14 @@
 			</div>			
 			<div class="col-md-6 rtl">
 				<div id="contact-right">
-				<h3  style="color:aliceblue;">מוזמן להשאיר רשמים</h3>
+				<h3  style="color:aliceblue;font-family: 'Suez One', serif;">מוזמנים להשאיר רשמים</h3>
 
-					<form class="contact-form" name="formal" action="contact-form-process.php" method="post" target="_blank">
-						<input type="text" name="full-name" placeholder="אשמח לדעת את שמך" class="form-control">
-						<input type="text" name="email" placeholder="כתובת המייל שלך בבקשה" class="form-control">
-						<textarea rows="5" name="message" placeholder="מהי הודעתך...." class="form-control"></textarea>				
+					<!--form class="contact-form" id="idForm" name="formal" action="contact-form-process.php" method="post" -->
+					<form class="contact-form" id="idForm" name="formal"  action="" onsubmit="" method="post" >
+						<input type="text" id="full-name" name="full-name" placeholder="אשמח לדעת את שמך" class="form-control">
+						<input type="text" id="email" name="email" placeholder="כתובת המייל שלך בבקשה" class="form-control">
+						<textarea rows="5" id="message" name="message" placeholder="מהי הודעתך...." class="form-control"></textarea>				
 						<div type ="submit" id="send-btn">
-						 <?php echo $result; ?>
 						<button class="btn btn-lg btn-general " type="submit"  name="submit">שלח</button>
 						<!--button class="btn btn-lg btn-general btn-white" type="submit"  name="submit">שלח</button-->
 				
@@ -723,6 +759,40 @@
 						<!--input class="btn btn-lg btn-general btn-white" type="submit" value="שלח"-->
 						</div>
 					</form>
+					
+					    <script type="text/javascript">
+    function sendEnquiryform(){
+        var name=$('#full-name').val();
+        var email=$('#email').val();
+        var message=$('#message').val();
+		$("#idForm")[0].reset();
+        $.post("contact-form-process.php",'name='+full-name+'&email='+email+'&message='+message,function(result,status,xhr){
+				
+                if( status.toLowerCase()=="error".toLowerCase() )
+                { alert("An Error Occurred.."); }
+                else { 
+                    //alert(result);
+                    $('#sucessMessage').html(result);		
+                }
+            })
+            .fail(function(){ alert("something went wrong. Please try again") });
+			
+    }
+	function clearform(){
+		
+		document.formal.reset();
+	}	
+							
+		function all(){
+		sendEnquiryform();
+			clearform();
+	}						
+	
+	
+
+						
+</script>
+					
 
 				</div>
 			</div>
@@ -776,7 +846,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel" style="color:Tomato;"><b>קצת עליי</b></h5>
+        <h5 class="modal-title" id="exampleModalLabel" style="color:Tomato;text-align: center;"><b>קצת עליי</b></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -849,6 +919,83 @@
   </div>
 </div>
 	
+	<div class="modal fade" id="ConfirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: white;background-color:mediumpurple; font-weight: bold;">אישור  קבלת הפנייה</h5>
+        <!--button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button-->
+      </div>
+      <div class="modal-body">המייל נשלח, תודה רבה על הביקור </div>
+      <div class="modal-footer">
+		   <button type="button" class="btn btn-secondary" data-dismiss="modal" style="color: white;background-color:purple; font-weight: bold;"aria-label="סגירה">
+		  סגירה
+		  </button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	
+	<div class="modal fade" id="articlesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: dimgrey;">
+        <h3 class="modal-title" id="exampleModalLabel" style="color:white;text-align: center;font-family: 'Suez One', serif;"><b>קצת מהעיתונות</b></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="background-color: beige;">
+		  
+		  <section id="nessziona" style="margin-bottom: 20px;" id="unit">
+							  <h4 style="font-family: 'Suez One', serif;"> <a href="img/nesziona/nessziona.jpg"  data-lightbox="image123" data-title="My caption"><img src="img/nesziona/nessziona.jpg" style="height:100px;weight:100px;margin-left: 30px;"></a> מקומון נס ציונה</h4>
+					
+										
+							  
+							  <script>
+								 
+    							 light.option({
+      							'resizeDuration': 200,
+      							'wrapAround': true
+    							})
+							  </script>
+		 
+		  					    
+		  </section> 
+		   
+		  <section id="germany" style="margin-bottom: 20px;" id="unit">
+							  <h4 style="font-family: 'Suez One', serif;"> <a href="img/germany/germany.jpg"  data-lightbox="image1234" data-title="My caption"><img src="img/germany/germany.jpg" style="height:100px;weight:100px;margin-left: 30px;"></a>סיקור תערוכה מגרמניה</h4>										  
+							  <script>
+								 
+    							 light.option({
+      							'resizeDuration': 200,
+      							'wrapAround': true
+    							})
+							  </script>				    
+		  </section> 
+		  
+		  <section id="galgefen" id="unit">
+							   <h4 style="font-family: 'Suez One', serif;"> <a href="img/galgefen/galgefen1.jpg"  data-lightbox="image1235" data-title="My caption"><img src="img/galgefen/galgefen1.jpg" style="height:100px;weight:100px;margin-left: 30px;"></a>כתבה אישית במקומון ראשון</h4>
+			   				  <a href="img/galgefen/galgefen2.jpg"  data-lightbox="image1235" data-title="My caption"><!--img src="img/galgefen/galgefen2.jpg" style="height:100px;weight:100px;"--></a>
+						      <a href="img/galgefen/galgefen3.jpg"  data-lightbox="image1235" data-title="My caption"><!--img src="img/galgefen/galgefen3.jpg" style="height:100px;weight:100px;"--></a>
+							  <script>	 
+    							 light.option({
+      							'resizeDuration': 200,
+      							'wrapAround': true
+    							})
+							  </script>
+		 		  					    
+		  </section> 	
+
+      </div>
+      <div class="modal-footer" style="background-color: dimgray;">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 	
     <!-- Temporary Space-->
 
@@ -867,6 +1014,8 @@
     <!--owl carosel JS-->
     
     <script src="js/owl.carousel.min.js"></script>
+	
+	<script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
     
 	 <!--counter-->
 	<script src="js/counter/jquery.waypoints.min.js"></script>
@@ -875,10 +1024,6 @@
 	<script src="js/easing/jquery.easing.1.3.js"></script>
     <!-- custom JS -->
     <script src="js/custom.js"></script>
-    
-    
-
+ 
 </body>
-
-
 </html>

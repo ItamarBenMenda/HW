@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 $result='';
 $input='';
+$name='';
 
 if(isset($_POST['submit']))
 	$name=$_POST['full-name'];
@@ -59,22 +60,21 @@ try {
     $mail->Body    = "Mail was received from: ".$email. "\t Mail Content: ".$message;
 
     $mail->send();
-	//$result = "תודה \t".$name. " בעבור שליחת המייל  במידה ויהיה צורך אצור קשר";
-	//$input = $_POST['inputText']; //get input text
-	//$result = "Thank You \t".$name. " We will be in contact with you";
-	//echo $result. $inputTest; 
-	
-    echo 'Message has been sent';
+
+
+    echo '1';
+
+	//print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
 		
-	//header("Location:index.html");		
-		
-	//echo $_POST["Mail was sent Succesfully"];
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  // print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
 //		$result = "Somthing went Wrong Please Try again";
 
 }
 ?>
+
+
 
 
 
